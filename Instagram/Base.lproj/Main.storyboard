@@ -328,7 +328,6 @@
                                 <state key="normal" title="キャンセル"/>
                                 <connections>
                                     <action selector="handleCancelButton:" destination="ili-oQ-kZD" eventType="touchUpInside" id="NgB-r9-PCU"/>
-                                    <action selector="handleSubmitButton:" destination="ili-oQ-kZD" eventType="touchUpInside" id="Nus-R7-S9e"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -344,7 +343,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="handleCancelButton" destination="mxK-01-Crh" id="85F-o9-8hz"/>
                         <outlet property="textFieldView" destination="cQe-3C-sxT" id="REv-k2-KI2"/>
                     </connections>
                 </viewController>

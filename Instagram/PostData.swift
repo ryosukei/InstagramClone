@@ -14,7 +14,7 @@ class PostData: NSObject{
     var caption: String?
     var date: Date?
     var likes: [String] = []
-    var comments: [String:String]?
+    var comments: [Dictionary<String, String>] = []
     var isLiked: Bool = false
     
     init(document: QueryDocumentSnapshot){
@@ -34,7 +34,7 @@ class PostData: NSObject{
                 self.isLiked = true
             }
         }
-        if let comments = postDic["comments"] as?[String:String]{
+        if let comments = postDic["comments"] as?[Dictionary<String, String>]{
             self.comments = comments
         }
     }
